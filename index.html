@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ramesh Balakrishnan - Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        Ramesh Balakrishnan
+        <div class="contact_info">
+          <img src="images/envelope.png" alt="circled-envelope.img" />
+          Ramesh@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="images/phone.png" alt="circled-phone-img"/>
+          +919876543210
+
+        </div>
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#about-me">Skills</a>
+        <a class="topmenu" href="#about-me">Projects</a>
+        <a class="topmenu" href="#about-me">Recommendations</a>
+        <!-- Add the links for Skills, Projects and Recommendation here -->
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img src="images/drink_coffee-resize.gif"
+        class="profile_image" />
+    </div>
+
+    <div>
+      <h1>
+        Hi, I'm Ramesh Balakrishnan! <img src="images/waving-hand-emoji.png"
+          alt="waving-hand-emoji" width="60px" />
+      </h1>
+      <p>
+        I am a full stack developer with 2 years of experience in both application and presentation layers.
+        I have worked on applications and microservices deployed on IBM Cloud.
+        I studied IBM course from coursera.org.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+
+    <div class="all_skills">
+
+      <div class="skill">
+        <img src="images/html5-logo.png" />
+        <h6>HTML</h6>
+        <p>2 Years Experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="images/css-logo.png" />
+        <h6>CSS</h6>
+        <p>2 Years Experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="images/javascript_img.png" />
+        <h6>JavaScript</h6>
+        <p>2 Years Experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="images/react-logo.jpg" />
+        <h6>React</h6>
+        <p>2 Years Experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="images/bootstrap-logo-shadow.png" />
+        <h6>Bootstrap</h6>
+        <p>2 Years Experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="images/git-logo.jpg" />
+        <h6>Git</h6>
+        <p>2 Years Experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="images/GitHub-logo-500x281.png" />
+        <h6>GitHub</h6>
+        <p>2 Years Experience</p>
+      </div>
+      <!-- Add more skills here -->
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>
+      Projects
+    </h2>
+    <div style="clear:both;"></div>
+
+    <div id="projects-container" class="projects-container">
+      <div class="project-card">
+        <h3>Saloon Website</h3>
+        <ul>
+          <li>Created a styled multi-page website for a trendCUT saloon shop and integrated it with a appointment, using
+            stripe for payment gateway</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Womens clothing Website</h3>
+        <ul>
+          <li>Created a styled multi-page website for a local vendor in the women specialised clothing and dressing and
+            integrated it with a shopping cart, using stripe for payment gateway</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>YouTube Comment Analyzer</h3>
+        <ul>
+          <li>Developed and deployed a YouTube Comment Analyzer for the box reviews section of a personal YouTube
+            channel using IBM NLU</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+  <div style="clear:both;"></div>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Ramesh is a very quick learner and quickly grasps key concepts of Web development.
+        He got a great attitude & He is an excellent team player.
+        He has a curious mind and asks the right question.
+        He takes initiative within a team and has potentials to lead the team.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Working with Ramesh has been an awesome experience.
+        He is highly knowledgable and always goes the extra step to make sure everything is right.
+        For any future projects that need his expertise I would definitely want to work with him again.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        I had worked along with Ramesh during the initial phase of our venture which needed Web development.
+        He is a committed resource who has in depth knowledge about the domain.
+        He will be an asset for any organisation!
+        <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>
+        <input type="text" placeholder="Name (Optional)"> <br />
+        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <div class="iconbutton">
+    <a href="#home">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+        width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <!--Add the code here for the logo to appear and the icon to be actionable-->
+    </a>
+  </div>
+
+  <div class="popup" id="popup" class="flex_center">
+    <img src="images/checkmark-100.png" style="width: 50px;"/>
+    <h3>Thanks for leaving a recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+</body>
+
+</html>
